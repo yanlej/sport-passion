@@ -1,0 +1,33 @@
+<div class="row">
+    <h1 class="titre col-md-4 offset-5">Tableau de bord</h1>
+
+    <a [routerLink]="['/activite/formulaire']" class="col-md-2 buttonForm"><button class='btn buttonCss'>Formulaire d'activité</button></a>
+</div>
+
+<div class="row">
+    <table class="table table-bordered offset-3">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Enseignant</th>
+                <th scope="col">Activité</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>voir</td>
+                <td>ton code</td>
+                <td>ton code</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="row">
+
+    <app-charts></app-charts>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+
+</div>

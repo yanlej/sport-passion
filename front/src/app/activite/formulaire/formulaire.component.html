@@ -1,0 +1,138 @@
+<div class="body">
+
+    <h2 class="titreForm">Formulaire d'activité</h2>
+
+    <form [formGroup]="activiteForm" >
+
+        <div class="row">
+            <mat-form-field class="form-group col-md-2 offset-1">
+                <mat-label>Entrer une date</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="date" class="form-control">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-3 offset-3">
+                <mat-label>Description</mat-label>
+                <textarea matInput formControlName="description" class="form-control"></textarea>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="form-group col-md-2 offset-1">
+                <mat-label>Categorie</mat-label>
+                <mat-select formControlName="categorie" class="form-control">
+                    <mat-option value="MSS">MSS</mat-option>
+                    <mat-option value="MSS">EVS</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="form-group col-md-2 offset-1">
+                <mat-label>Pôle 1</mat-label>
+                <mat-select formControlName="pole1" class="form-control">
+                    <mat-option value="Handicap">Handicap</mat-option>
+                    <mat-option value="Bien vieillir">Bien vieillir</mat-option>
+                    <mat-option value="Maladie chronique">Maladie chronique</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-2 offset-3">
+                <mat-label>Pôle 2</mat-label>
+                <mat-select formControlName="pole2" class="form-control">
+                    <mat-option value="Handicap">Handicap</mat-option>
+                    <mat-option value="Bien vieillir">Bien vieillir</mat-option>
+                    <mat-option value="Maladie chronique">Maladie chronique</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field class="form-group col-md-2 offset-1">
+                <mat-label>Service</mat-label>
+                <mat-select formControlName="service" class="form-control">
+                    <mat-option value="institutions">Institutions et collectivités</mat-option>
+                    <mat-option value="APA">APA personnalisées</mat-option>
+                    <mat-option value="ETP">ETP</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="form-group col-md-1 offset-3">
+                <mat-label for="duree">Durée(en heure)</mat-label>
+                <input matInput type="time" formControlName="duree" class="form-control" id="duree">
+            </mat-form-field>
+
+        </div>
+
+        <div class="row">
+            <mat-form-field class="form-group col-md-2 offset-1">
+                <mat-label for="lieu">Lieu</mat-label>
+                <input matInput type="text" formControlName="lieu" class="form-control" id="lieu">
+            </mat-form-field>
+        </div>
+
+        
+        <h2 class="titreForm">Présence</h2>
+
+        <table class="col-md-10 offset-1">
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Pôle 1</th>
+                    <th scope="col">Pôle 2</th>
+                    <th scope="col">Présence</th>
+                    <th scope="col">Raison absence</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <mat-form-field class="form-group">
+                            <mat-label>Nom</mat-label>
+                            <input matInput type="text" formeControlName="nom" class="form-control">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="form-group">
+                            <mat-label>Prénom</mat-label>
+                            <input matInput type="text" formeControlName="prenom" class="form-control">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="form-group">
+                            <mat-label>Pôle 1</mat-label>
+                            <input matInput type="text" formeControlName="poleParticipant1" class="form-control">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="form-group">
+                            <mat-label>Pôle 2</mat-label>
+                            <input matInput type="text" formeControlName="poleParticipant2" class="form-control">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-radio-group class="form-group" formControlName="etat" class="form-control">
+                            <mat-radio-button value="oui">oui</mat-radio-button>
+                            <mat-radio-button value="non">non</mat-radio-button>
+                        </mat-radio-group>
+                    </td>
+                    <td>
+                        <mat-form-field class="form-group">
+                            <mat-label>Raison</mat-label>
+                            <input matInput type="text" formeControlName="raison" class="form-control">
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="row">
+            <div class="buttonCenter">
+                <button type="submit" class="btn btn-info col-md-1">Soumettre</button>
+            </div>
+        </div>
+    </form>
+</div>

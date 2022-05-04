@@ -1,0 +1,69 @@
+<div class="body">
+
+    <h2 class="titreDetails">Détails de l'activité</h2>
+
+    <div *ngFor="let activite of activites">
+        <div class="row">
+            <p class="col-md-1 offset-1 gras">Date:</p>
+            <p class="col-md-1">{{activite.date}}</p>
+            <p class="gras col-md-1 offset-3">Description:</p><textarea class="col-md-3">{{activite.description}}</textarea>
+        </div>
+
+        <div class="row">
+            <p class="col-md-1 offset-1 gras">Categorie:</p>
+            <p class="col-md-1">{{activite.categorie}}</p>
+        </div>
+
+        <div class="row">
+            <p class="col-md-1 offset-1 gras">Pôles:</p>
+            <p class="col-md-1">{{activite.pole}}</p>
+        </div>
+
+        <div class="row">
+            <p class="col-md-1 offset-1 gras">Service:</p>
+            <p class="col-md-1">{{activite.service}}</p>
+            <p class="gras col-md-1 offset-3">Durée:</p><p class="col-md-1">{{activite.duree}}</p>
+        </div>
+
+        <div class="row">
+            <p class="col-md-1 offset-1 gras">Lieu:</p>
+            <p class="col-md-1">{{activite.lieu}}</p>
+            <p class="gras col-md-1 offset-3">Enseignant:</p><p class="col-md-3">{{activite.enseignant}}</p>
+        </div>
+    </div>
+
+    <h2 class="titreDetails">Présences</h2>
+
+    <table class="col-md-6 offset-3">
+        <thead>
+            <tr>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Présent/Absent</th>
+                <th scope="col">Raison absence</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="row">
+        <div class="buttonCenter">
+            <button type="button" class="btn btn-warning col-md-1 buttonMargin buttonBold">Modifier</button>
+            <button type="button" class="btn btn-danger col-md-1 buttonMargin buttonBold">Supprimer</button>
+            <a [routerLink]="['/activite']"><button type="button" class="btn btn-primary col-md-1 buttonBold">Retour</button></a>
+        </div>
+    </div>
+</div>

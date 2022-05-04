@@ -1,0 +1,46 @@
+.body{
+
+    background-color: #FF8800;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.titreForm{
+
+    background-color: #46C2EF;
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 0px 0px 100px 100px;
+    font-weight: bold;
+}
+
+mat-radio-button{
+
+    margin-right: 10px;
+}
+
+table{
+
+    border: 1px solid white;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.buttonCenter{
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+
+    font-weight: bold;
+    font-size: 18px;
+}

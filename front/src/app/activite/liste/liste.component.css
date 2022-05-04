@@ -1,0 +1,65 @@
+.h1Act{
+
+    color: #366FBC;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table{
+
+    border: 1px solid #FF8800;
+    background-color: #A9E5F8;
+    width : 1300px;
+    text-align: center;
+    margin: 30px auto;
+    
+}
+
+.detailsAct{
+
+   font-size: 34px;
+}
+
+.editAct{
+
+    border: 2px solid rgb(255, 174, 0);
+    background-color: rgb(255, 174, 0);
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 10px;
+
+}
+
+.deleteAct{
+
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: gray;
+}
+
+@media only screen and (max-width : 500px){
+    .table{
+
+        border: 1px solid #FF8800;
+        background-color: #A9E5F8;
+        width : 10px;
+        text-align: center;
+        margin: auto;
+        
+    }
+}

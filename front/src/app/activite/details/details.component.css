@@ -1,0 +1,51 @@
+.body{
+
+    background-color: #46C2EF;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.titreDetails{
+
+    background-color: #FF8800;
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    border-radius: 0px 0px 100px 100px;
+    font-weight: bold;
+}
+
+.gras{
+
+    font-weight: bold;
+}
+
+table{
+
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
+.buttonCenter{
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttonMargin{
+
+    margin-right: 100px;
+    
+}
+
+.buttonBold{
+
+    font-weight: bold;
+    font-size: 18px;
+}

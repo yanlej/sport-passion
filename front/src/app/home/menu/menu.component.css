@@ -1,0 +1,50 @@
+.sidenav-container {
+    position: absolute;
+    top: 102px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+.button-menu{
+    background-color: #FF8800;
+    border-radius: 0px 0px 20px 0px;
+    position: fixed;
+}
+
+mat-sidenav{
+
+    width: 150px;
+    background-color: #FF8800;
+}
+
+li{
+    margin-top: 15px;
+    list-style: none;
+}
+
+.active{
+
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.button-menu-open{
+
+    margin-left: 35px;
+    background-color: #FF8800;
+}
+
+.li-deco{
+    margin-top: 100px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}

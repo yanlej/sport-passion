@@ -1,0 +1,43 @@
+                                            <!--Menu barre latéral
+                                                fermée avec un click extérieur ou 
+                                                click sur le bouton "menu" ou
+                                                à l'appuie de la touche "echap"
+                                            -->
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav [(opened)]="opened" (keydown.escape)="opened">
+        <button class="button-menu-open" mat-button (click)="opened=!opened">Menu</button>
+        <ul (click)="sidenav.close()">
+            <li routerLinkActive="active">
+                <a [routerLink]="['/activite']">Activités</a>
+            </li>
+            <li>Enseignants</li>
+            <li routerLinkActive="active">
+                <a [routerLink]="['/participant']">Participants</a>
+            </li>
+            <li>Lieux</li>
+            <li>Evenements</li>
+            <li routerLinkActive="active">
+                <a [routerLink]="['/categories']">Catégories</a>
+            </li>
+            <li routerLinkActive="active">
+                <a [routerLink]="['/poles']">Pôles</a>
+            </li>    
+            <li routerLinkActive="active">
+                <a [routerLink]="['/services']">Services</a>
+            </li>
+            <li routerLinkActive="active">
+                <a [routerLink]="['/roles']">Rôles</a>
+            </li>
+            <li class="li-deco">Déconnexion</li>
+        </ul>
+        <div class="copyright">
+            ©BEWEB - AT/DP/AB/YL
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <button class="button-menu" mat-button (click)="sidenav.open()">Menu</button>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

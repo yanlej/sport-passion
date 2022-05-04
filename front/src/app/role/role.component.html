@@ -1,0 +1,43 @@
+<h1>Liste des Rôles</h1>
+
+<div class="row">
+    <table class="table table-bordered offset-3">
+        <thead>
+            <tr>
+                <th scope="col">Rôles</th>
+                <th scope="col">Participants</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>voir</td>
+                <td>ton code</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="row body offset-3">
+        
+        <h3 class="titreForm">Ajouter un rôle</h3>
+
+        <form [formGroup]="roleForm">
+
+            <mat-form-field class="form-group">
+                <mat-label>Nom Du Rôle</mat-label>
+                <input matInput type="text" formControlName="nomRole" class="form-control">
+            </mat-form-field>
+
+            <mat-form-field class="form-group offset-1">
+                <mat-label>Droit à attribuer</mat-label>
+                <mat-select formControlName="droit" class="form-control">
+                    <mat-option value="test">test</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <button type="submit" class="btn btn-warning">Ajouter</button>
+        </form>
+        
+    </div>   
+</div>
+

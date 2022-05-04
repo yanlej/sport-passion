@@ -1,0 +1,35 @@
+<h1>Liste des Catégories</h1>
+
+<div class="row">
+    <table class="table table-bordered offset-3">
+        <thead>
+            <tr>
+                <th scope="col">Catégories</th>
+                <th scope="col">Participants</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>voir</td>
+                <td>ton code</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="row body offset-3">
+        
+        <h3 class="titreForm">Ajouter une categorie</h3>
+
+        <form [formGroup]="categorieForm">
+
+            <mat-form-field class="form-group">
+                <mat-label>Nom De La Categorie</mat-label>
+                <input matInput type="text" formControlName="nomCategorie" class="form-control">
+            </mat-form-field>
+            <br>
+            <button type="submit" class="btn btn-warning">Ajouter</button>
+        </form>
+        
+    </div>   
+</div>

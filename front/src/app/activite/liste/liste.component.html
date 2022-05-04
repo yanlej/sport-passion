@@ -1,0 +1,45 @@
+<h1 class="h1Act">Liste des Activités</h1>
+
+<table class="table table-bordered">
+
+    <thead>
+
+      <tr>
+
+        <th scope="col">Date</th>
+        <th scope="col">Enseignant</th>
+        <th scope="col">Categorie</th>
+        <th scope="col">Pôle</th>
+        <th scope="col">Service</th>
+        <th scope="col">Lieu</th>
+        <th scope="col">Description</th>
+        <th scope="col">Durée</th>
+        <th scope="col"></th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let activite of activites">
+
+        <th scope="row">{{activite.date}}</th>
+        <td>{{activite.enseignant}}</td>
+        <td>{{activite.categorie}}</td>
+        <td>{{activite.pole}}</td>
+        <td>{{activite.service}}</td>
+        <td>{{activite.lieu}}</td>
+        <td>{{activite.description}}</td>
+        <td>{{activite.duree}}</td>
+        <td>
+          <a [routerLink]="['/activite/details', activite.id]"><span class="material-icons detailsAct">info</span></a>
+          <span class="material-icons editAct">edit</span>
+          <span class="material-icons deleteAct">delete</span>
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
